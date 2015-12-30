@@ -1,0 +1,28 @@
+//
+//  PrefixHeader.pch
+//  CustomConfigIOS
+//
+//  Created by apple on 15/12/28.
+//  Copyright © 2015年 Spoot Studio. All rights reserved.
+//
+
+
+#ifdef __OBJC__
+
+#import "FXForms.h"
+#import "UIView+Extension.h"
+#import <SDWebImage/UIImageView+WebCache.h>
+#import <MJRefresh.h>
+#import <MJExtension.h>
+#import <HHAlertView.h>
+#import <MBProgressHUD.h>
+#import <AFNetworking.h>
+
+#import "BaseNav.h"
+#import "Helper.h"
+#import "AppDelegate.h"
+
+#define GLLoadStartConfigURL @"http://192.168.31.208:8881/GetStart.aspx"
+#define GLLoadGuideConfigURL @"http://192.168.31.208:8881/GetGuide.aspx"
+#define GLRedColor [UIColor colorWithRed:(195.0/255.0) green:(18.0/255.0) blue:(18.0/255.0) alpha:1.0]
+#endif

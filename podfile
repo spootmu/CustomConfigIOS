@@ -1,0 +1,7 @@
+platform:ios,'9.0'
+pod "AFNetworking"
+pod "MJRefresh"
+pod "HHAlertView"
+pod "MJExtension"
+pod "SDWebImage"
+pod "MBProgressHUD"
