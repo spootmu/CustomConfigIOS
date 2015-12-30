@@ -25,4 +25,5 @@
 #define GLLoadStartConfigURL @"http://192.168.31.208:8881/GetStart.aspx"
 #define GLLoadGuideConfigURL @"http://192.168.31.208:8881/GetGuide.aspx"
 #define GLRedColor [UIColor colorWithRed:(195.0/255.0) green:(18.0/255.0) blue:(18.0/255.0) alpha:1.0]
+#define GLLanuchImg @"LaunchImage"
 #endif

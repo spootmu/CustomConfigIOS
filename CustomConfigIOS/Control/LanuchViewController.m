@@ -37,7 +37,7 @@
 
 -(void)setupUI
 {
-    UIImageView *imgv=[[UIImageView alloc]initWithImage:[UIImage imageNamed:@"LaunchImage"]];
+    UIImageView *imgv=[[UIImageView alloc]initWithImage:[UIImage imageNamed:GLLanuchImg]];
     imgv.frame=CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, [UIScreen mainScreen].bounds.size.height);
     [self.view addSubview:imgv];
     self.imglanuch=imgv;
