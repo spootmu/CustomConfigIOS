@@ -23,6 +23,20 @@
  */
 +(CATransition*)ViewTransitionWithAnimationType:(NSString*)type;
 
-
+/**
+ *  弹出对话框
+ *
+ *  @param title   <#title description#>
+ *  @param content <#content description#>
+ *
+ *  @return <#return value description#>
+ */
 +(UIAlertController*)AlertWithTitle:(NSString*)title Content:(NSString*)content;
+
+/**
+ *  同步读取Tab配置
+ *
+ *  @return <#return value description#>
+ */
++(NSArray*)GetTabConfig;
 @end

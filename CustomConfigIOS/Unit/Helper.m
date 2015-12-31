@@ -7,7 +7,10 @@
 //
 
 #import "Helper.h"
-
+#import "TabData.h"
+@interface Helper()
+@property(nonatomic,strong) AFHTTPRequestOperationManager *manager;
+@end
 @implementation Helper
 /**
  *  视图切换动画
@@ -36,5 +39,21 @@
     [alert addAction:actionOk];
     
     return alert;
+}
+
++(NSArray*)GetTabConfig
+{
+    NSURL *url=[NSURL URLWithString:GLLoadTabConfigURL];
+    NSURLRequest *request=[NSURLRequest requestWithURL:url];
+    AFHTTPRequestOperation *op=[[AFHTTPRequestOperation alloc]initWithRequest:request];
+    op.responseSerializer=[AFJSONResponseSerializer serializer];
+    //必须设置响应类型
+    op.responseSerializer.acceptableContentTypes=[NSSet setWithObject:@"text/html"];
+    [op start];
+    [op waitUntilFinished];
+    
+    NSLog(@"temp:%@",[TabData objectArrayWithKeyValuesArray:[op responseObject]]);
+    
+    return [TabData objectArrayWithKeyValuesArray:[op responseObject]];
 }
 @end

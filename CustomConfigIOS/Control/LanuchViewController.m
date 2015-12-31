@@ -62,7 +62,6 @@
             vc=[AppDelegate globalDelegate].MainTab;
         }
         
-//        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:vc];
         [self.view.window.layer addAnimation:[Helper ViewTransitionWithAnimationType:@"rippleEffect"] forKey:nil];
         [UIApplication sharedApplication].keyWindow.rootViewController=vc;
         

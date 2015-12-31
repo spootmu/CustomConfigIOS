@@ -10,6 +10,7 @@
 #import "MainViewController.h"
 #import "GuideViewController.h"
 #import "BaseTab.h"
+#import "TabData.h"
 @interface MainTabViewController ()
 @end
 
@@ -22,12 +23,13 @@
 
 -(void)setupUI
 {
-    MainViewController *mainvc=[AppDelegate globalDelegate].MainView;
-    GuideViewController *guidevc=[AppDelegate globalDelegate].GuideView;
-    mainvc.tabBarItem.badgeValue=@"10";
-    [self addChildVC:@"one" ViewController:mainvc norImg:@"home" selImg:nil];
-    [self addChildVC:@"two" ViewController:guidevc norImg:@"tabbar_home_selected" selImg:nil];
     [self.tab CustomCenterButton:@"cen" BackgroundImg:@"centerbtn" ButtonImg:nil];
+
+    for (TabData *data in [Helper GetTabConfig])
+    {
+       UIViewController *vc=[[[((UIViewController*)NSClassFromString(data.clsname)) class]alloc]init];
+       [self addChildVC:data.title ViewController:vc norImg:data.imgName selImg:data.imgSelName];
+    }
 }
 
 @end
