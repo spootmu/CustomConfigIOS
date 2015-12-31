@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+@class GuidButtonGoto;
 
 @interface BaseGuide : UIViewController
 @property (nonatomic,strong) NSArray *ImgUrl;
+@property(nonatomic,strong) GuidButtonGoto *btnGoto;
+@end
+
+
+@interface GuidButtonGoto : UIButton
+
 @end

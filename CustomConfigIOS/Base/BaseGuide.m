@@ -75,13 +75,62 @@
         {
             imgv.userInteractionEnabled=YES;
             NSLog(@"last");
+            [self SetupGotoButton:imgv];
         }
     }
     self.sv.contentSize=CGSizeMake(imgW*self.ImgUrl.count, imgH);
+}
+
+-(void)SetupGotoButton:(UIImageView *)iv
+{
+    GuidButtonGoto *btngoto=[[GuidButtonGoto alloc]init];
+    btngoto.w=100;
+    btngoto.h=35;
+    btngoto.cx=self.view.cx;
+    btngoto.cy=self.view.h-100;
+    [btngoto addTarget:self action:@selector(btnGotoClick:) forControlEvents:UIControlEventTouchUpInside];
+    [iv addSubview:btngoto];
+    self.btnGoto=btngoto;
+}
+
+-(void)btnGotoClick:(GuidButtonGoto*)sender
+{
+    NSLog(@"goto");
+    [UIApplication sharedApplication].keyWindow.rootViewController=[AppDelegate globalDelegate].MainTab;
 }
 
 -(BOOL)prefersStatusBarHidden
 {
     return YES;
 }
+@end
+
+/**
+ *  尾页跳转按钮
+ */
+@implementation GuidButtonGoto
+
+- (instancetype)initWithFrame:(CGRect)frame
+{
+    self = [super initWithFrame:frame];
+    if (self) {
+        self.layer.borderColor=[[UIColor purpleColor] CGColor];
+        self.layer.borderWidth=2;
+        [self.layer setMasksToBounds:YES];
+        [self.layer setCornerRadius:5.0];
+        self.backgroundColor=[UIColor grayColor];
+        self.alpha=0.5;
+        [self setTintColor:[UIColor blackColor]];
+        [self setTitle:@"点击进入" forState:UIControlStateNormal];
+        self.titleLabel.font=[UIFont systemFontOfSize:14];
+        
+    }
+    return self;
+}
+
+-(void)setHighlighted:(BOOL)highlighted
+{
+    
+}
+
 @end
