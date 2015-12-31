@@ -26,6 +26,7 @@
 		1876694D1C337AF200C02B9F /* BaseTabViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876694C1C337AF200C02B9F /* BaseTabViewController.m */; };
 		187669501C337EE000C02B9F /* CustomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876694F1C337EE000C02B9F /* CustomTabBarButton.m */; };
 		188B958C1C33D6AF00A61FA3 /* TabData.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B958B1C33D6AF00A61FA3 /* TabData.m */; };
+		188B958F1C34DB0000A61FA3 /* BaseGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B958E1C34DB0000A61FA3 /* BaseGuide.m */; };
 		18E9212C309ED07BDE827F50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEFBFAEE119B1D23D2E8809 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +69,8 @@
 		1876694F1C337EE000C02B9F /* CustomTabBarButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CustomTabBarButton.m; sourceTree = "<group>"; };
 		188B958A1C33D6AF00A61FA3 /* TabData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabData.h; sourceTree = "<group>"; };
 		188B958B1C33D6AF00A61FA3 /* TabData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabData.m; sourceTree = "<group>"; };
+		188B958D1C34DB0000A61FA3 /* BaseGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGuide.h; sourceTree = "<group>"; };
+		188B958E1C34DB0000A61FA3 /* BaseGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGuide.m; sourceTree = "<group>"; };
 		6542DE4F6DB70E781B505016 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDEFBFAEE119B1D23D2E8809 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -212,6 +215,8 @@
 				187669461C327BE300C02B9F /* BaseTab.m */,
 				1876694B1C337AF200C02B9F /* BaseTabViewController.h */,
 				1876694C1C337AF200C02B9F /* BaseTabViewController.m */,
+				188B958D1C34DB0000A61FA3 /* BaseGuide.h */,
+				188B958E1C34DB0000A61FA3 /* BaseGuide.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -364,6 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1876693D1C32252500C02B9F /* BaseNav.m in Sources */,
+				188B958F1C34DB0000A61FA3 /* BaseGuide.m in Sources */,
 				187669441C32653C00C02B9F /* MainTabViewController.m in Sources */,
 				187669501C337EE000C02B9F /* CustomTabBarButton.m in Sources */,
 				1876691C1C31245300C02B9F /* UIView+Extension.m in Sources */,

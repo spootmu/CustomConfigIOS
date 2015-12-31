@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface GuideViewController : UIViewController
+#import "BaseGuide.h"
+@interface GuideViewController : BaseGuide
 
 @end
