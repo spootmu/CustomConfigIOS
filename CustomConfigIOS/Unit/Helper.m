@@ -52,8 +52,35 @@
     [op start];
     [op waitUntilFinished];
     
-    NSLog(@"temp:%@",[TabData objectArrayWithKeyValuesArray:[op responseObject]]);
+    NSLog(@"temp:%@",[TabData mj_objectArrayWithKeyValuesArray:[op responseObject]]);
     
-    return [TabData objectArrayWithKeyValuesArray:[op responseObject]];
+    return [TabData mj_objectArrayWithKeyValuesArray:[op responseObject]];
+}
+
+
+NSArray * getPropertyNameList(id object)
+{
+    unsigned int propertyCount = 0;
+    objc_property_t * properties = class_copyPropertyList([object class], &propertyCount);
+    
+    NSMutableArray * propertyNames = [NSMutableArray array];
+    for (unsigned int i = 0; i < propertyCount; ++i) {
+        objc_property_t property = properties[i];
+        const char * name = property_getName(property);
+        [propertyNames addObject:[NSString stringWithUTF8String:name]];
+    }
+    
+    return propertyNames;
+}
+
++(UserInfo*)ReadAccount
+{
+    NSString *path=AccountFile;
+    return [NSKeyedUnarchiver unarchiveObjectWithFile:path];
+}
++(void)WriteAccount:(UserInfo*)account
+{
+    NSString *path=AccountFile;
+    [NSKeyedArchiver archiveRootObject:account toFile:path];
 }
 @end

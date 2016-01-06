@@ -27,6 +27,16 @@
 		187669501C337EE000C02B9F /* CustomTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1876694F1C337EE000C02B9F /* CustomTabBarButton.m */; };
 		188B958C1C33D6AF00A61FA3 /* TabData.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B958B1C33D6AF00A61FA3 /* TabData.m */; };
 		188B958F1C34DB0000A61FA3 /* BaseGuide.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B958E1C34DB0000A61FA3 /* BaseGuide.m */; };
+		188B95921C3A52B700A61FA3 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95911C3A52B700A61FA3 /* LoginViewController.m */; };
+		188B95951C3A563300A61FA3 /* UserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95941C3A563300A61FA3 /* UserInfo.m */; };
+		188B959C1C3B5DD900A61FA3 /* ImagePlayerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B959B1C3B5DD900A61FA3 /* ImagePlayerView.m */; };
+		188B959F1C3B5E1B00A61FA3 /* TopImgView.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B959E1C3B5E1B00A61FA3 /* TopImgView.m */; };
+		188B95A11C3B5E2F00A61FA3 /* TopImgView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 188B95A01C3B5E2F00A61FA3 /* TopImgView.xib */; };
+		188B95A41C3B647300A61FA3 /* NewsImg.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95A31C3B647300A61FA3 /* NewsImg.m */; };
+		188B95A71C3B68C900A61FA3 /* ViewNewsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95A61C3B68C900A61FA3 /* ViewNewsViewController.m */; };
+		188B95AA1C3B9B2E00A61FA3 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95A91C3B9B2E00A61FA3 /* News.m */; };
+		188B95AD1C3CF8C300A61FA3 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95AC1C3CF8C300A61FA3 /* BaseTableViewController.m */; };
+		188B95B01C3CFE6600A61FA3 /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */; };
 		18E9212C309ED07BDE827F50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEFBFAEE119B1D23D2E8809 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -71,6 +81,25 @@
 		188B958B1C33D6AF00A61FA3 /* TabData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TabData.m; sourceTree = "<group>"; };
 		188B958D1C34DB0000A61FA3 /* BaseGuide.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseGuide.h; sourceTree = "<group>"; };
 		188B958E1C34DB0000A61FA3 /* BaseGuide.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseGuide.m; sourceTree = "<group>"; };
+		188B95901C3A52B700A61FA3 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		188B95911C3A52B700A61FA3 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		188B95931C3A563300A61FA3 /* UserInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserInfo.h; sourceTree = "<group>"; };
+		188B95941C3A563300A61FA3 /* UserInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserInfo.m; sourceTree = "<group>"; };
+		188B959A1C3B5DD900A61FA3 /* ImagePlayerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePlayerView.h; sourceTree = "<group>"; };
+		188B959B1C3B5DD900A61FA3 /* ImagePlayerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePlayerView.m; sourceTree = "<group>"; };
+		188B959D1C3B5E1B00A61FA3 /* TopImgView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TopImgView.h; sourceTree = "<group>"; };
+		188B959E1C3B5E1B00A61FA3 /* TopImgView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TopImgView.m; sourceTree = "<group>"; };
+		188B95A01C3B5E2F00A61FA3 /* TopImgView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TopImgView.xib; sourceTree = "<group>"; };
+		188B95A21C3B647300A61FA3 /* NewsImg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewsImg.h; sourceTree = "<group>"; };
+		188B95A31C3B647300A61FA3 /* NewsImg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewsImg.m; sourceTree = "<group>"; };
+		188B95A51C3B68C900A61FA3 /* ViewNewsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewNewsViewController.h; sourceTree = "<group>"; };
+		188B95A61C3B68C900A61FA3 /* ViewNewsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewNewsViewController.m; sourceTree = "<group>"; };
+		188B95A81C3B9B2E00A61FA3 /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		188B95A91C3B9B2E00A61FA3 /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
+		188B95AB1C3CF8C300A61FA3 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		188B95AC1C3CF8C300A61FA3 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		188B95AE1C3CFE6600A61FA3 /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
+		188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
 		6542DE4F6DB70E781B505016 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDEFBFAEE119B1D23D2E8809 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -145,6 +174,7 @@
 		1876691D1C3124FF00C02B9F /* ThirdParty */ = {
 			isa = PBXGroup;
 			children = (
+				188B95991C3B5DD900A61FA3 /* ImagePlayerView */,
 				1876691E1C31253700C02B9F /* FXForms */,
 			);
 			path = ThirdParty;
@@ -164,6 +194,12 @@
 			children = (
 				188B958A1C33D6AF00A61FA3 /* TabData.h */,
 				188B958B1C33D6AF00A61FA3 /* TabData.m */,
+				188B95931C3A563300A61FA3 /* UserInfo.h */,
+				188B95941C3A563300A61FA3 /* UserInfo.m */,
+				188B95A21C3B647300A61FA3 /* NewsImg.h */,
+				188B95A31C3B647300A61FA3 /* NewsImg.m */,
+				188B95A81C3B9B2E00A61FA3 /* News.h */,
+				188B95A91C3B9B2E00A61FA3 /* News.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -173,6 +209,9 @@
 			children = (
 				1876694E1C337EE000C02B9F /* CustomTabBarButton.h */,
 				1876694F1C337EE000C02B9F /* CustomTabBarButton.m */,
+				188B959D1C3B5E1B00A61FA3 /* TopImgView.h */,
+				188B959E1C3B5E1B00A61FA3 /* TopImgView.m */,
+				188B95A01C3B5E2F00A61FA3 /* TopImgView.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -190,6 +229,12 @@
 				187669431C32653C00C02B9F /* MainTabViewController.m */,
 				187669481C33786F00C02B9F /* SettingViewController.h */,
 				187669491C33786F00C02B9F /* SettingViewController.m */,
+				188B95901C3A52B700A61FA3 /* LoginViewController.h */,
+				188B95911C3A52B700A61FA3 /* LoginViewController.m */,
+				188B95A51C3B68C900A61FA3 /* ViewNewsViewController.h */,
+				188B95A61C3B68C900A61FA3 /* ViewNewsViewController.m */,
+				188B95AE1C3CFE6600A61FA3 /* NoticeViewController.h */,
+				188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -217,6 +262,8 @@
 				1876694C1C337AF200C02B9F /* BaseTabViewController.m */,
 				188B958D1C34DB0000A61FA3 /* BaseGuide.h */,
 				188B958E1C34DB0000A61FA3 /* BaseGuide.m */,
+				188B95AB1C3CF8C300A61FA3 /* BaseTableViewController.h */,
+				188B95AC1C3CF8C300A61FA3 /* BaseTableViewController.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -228,6 +275,15 @@
 				187669401C32277C00C02B9F /* Helper.m */,
 			);
 			path = Unit;
+			sourceTree = "<group>";
+		};
+		188B95991C3B5DD900A61FA3 /* ImagePlayerView */ = {
+			isa = PBXGroup;
+			children = (
+				188B959A1C3B5DD900A61FA3 /* ImagePlayerView.h */,
+				188B959B1C3B5DD900A61FA3 /* ImagePlayerView.m */,
+			);
+			path = ImagePlayerView;
 			sourceTree = "<group>";
 		};
 		5502F84E56978D8A6E453665 /* Frameworks */ = {
@@ -310,6 +366,7 @@
 			files = (
 				182615551C311B4D0088D203 /* Assets.xcassets in Resources */,
 				182615501C311B4D0088D203 /* Main.storyboard in Resources */,
+				188B95A11C3B5E2F00A61FA3 /* TopImgView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -368,21 +425,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				188B95AA1C3B9B2E00A61FA3 /* News.m in Sources */,
 				1876693D1C32252500C02B9F /* BaseNav.m in Sources */,
 				188B958F1C34DB0000A61FA3 /* BaseGuide.m in Sources */,
+				188B95A41C3B647300A61FA3 /* NewsImg.m in Sources */,
 				187669441C32653C00C02B9F /* MainTabViewController.m in Sources */,
 				187669501C337EE000C02B9F /* CustomTabBarButton.m in Sources */,
 				1876691C1C31245300C02B9F /* UIView+Extension.m in Sources */,
 				1876694A1C33786F00C02B9F /* SettingViewController.m in Sources */,
+				188B95AD1C3CF8C300A61FA3 /* BaseTableViewController.m in Sources */,
 				187669371C321AA500C02B9F /* LanuchViewController.m in Sources */,
 				1876692F1C312A3600C02B9F /* GuideViewController.m in Sources */,
+				188B95951C3A563300A61FA3 /* UserInfo.m in Sources */,
+				188B95A71C3B68C900A61FA3 /* ViewNewsViewController.m in Sources */,
 				187669211C31253700C02B9F /* FXForms.m in Sources */,
+				188B959C1C3B5DD900A61FA3 /* ImagePlayerView.m in Sources */,
 				187669321C312A8200C02B9F /* MainViewController.m in Sources */,
 				182615531C311B4D0088D203 /* CustomConfigIOS.xcdatamodeld in Sources */,
 				1876694D1C337AF200C02B9F /* BaseTabViewController.m in Sources */,
 				1826154A1C311B4D0088D203 /* AppDelegate.m in Sources */,
+				188B95B01C3CFE6600A61FA3 /* NoticeViewController.m in Sources */,
 				187669411C32277C00C02B9F /* Helper.m in Sources */,
+				188B959F1C3B5E1B00A61FA3 /* TopImgView.m in Sources */,
 				1876692C1C3128FB00C02B9F /* BaseViewController.m in Sources */,
+				188B95921C3A52B700A61FA3 /* LoginViewController.m in Sources */,
 				188B958C1C33D6AF00A61FA3 /* TabData.m in Sources */,
 				182615471C311B4D0088D203 /* main.m in Sources */,
 				187669471C327BE300C02B9F /* BaseTab.m in Sources */,

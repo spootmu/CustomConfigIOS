@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+@class UserInfo;
 @interface Helper : NSObject
 
 /**
@@ -39,4 +39,16 @@
  *  @return <#return value description#>
  */
 +(NSArray*)GetTabConfig;
+
+/**
+ *  获取对象属性数组
+ *
+ *  @param object <#object description#>
+ *
+ *  @return <#return value description#>
+ */
+NSArray * getPropertyNameList(id object);
+
++(UserInfo*)ReadAccount;
++(void)WriteAccount:(UserInfo*)account;
 @end

@@ -59,7 +59,7 @@
         }
         else
         {
-            vc=[AppDelegate globalDelegate].MainTab;
+            vc=[AppDelegate globalDelegate].LoginView;
         }
         
         [self.view.window.layer addAnimation:[Helper ViewTransitionWithAnimationType:@"rippleEffect"] forKey:nil];

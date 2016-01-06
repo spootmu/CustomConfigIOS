@@ -24,6 +24,7 @@
 @property(nonatomic,strong) MainViewController *MainView;
 @property(nonatomic,strong) LanuchViewController *LanuchView;
 @property(nonatomic,strong) MainTabViewController *MainTab;
+@property(nonatomic,strong) UIViewController *LoginView;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 + (AppDelegate *)globalDelegate;

@@ -87,6 +87,15 @@ static NSString * const sbName = @"Main";
     return _MainTab;
 }
 
+-(UIViewController *)LoginView
+{
+    if(!_LoginView)
+    {
+        _LoginView=[self.storyboard instantiateViewControllerWithIdentifier:@"login"];
+    }
+    return _LoginView;
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

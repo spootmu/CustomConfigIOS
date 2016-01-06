@@ -21,10 +21,21 @@
 #import "BaseNav.h"
 #import "Helper.h"
 #import "AppDelegate.h"
-
+#import "UserInfo.h"
 #define GLLoadStartConfigURL @"http://192.168.31.208:8881/GetStart.aspx"
 #define GLLoadGuideConfigURL @"http://192.168.31.208:8881/GetGuide.aspx"
 #define GLLoadTabConfigURL @"http://192.168.31.208:8881/GetTabConfig.aspx"
+#define GLLoadLoginURL @"http://192.168.31.208:8882/Login.aspx"
+#define GLLoadNewsImgURL @"http://192.168.31.208:8882/GetNewsImg.aspx"
+#define GLViewNewsURL @"http://192.168.31.208:8882/ViewNews.aspx?id=%zd"
+#define GLGetNewsURL @"http://192.168.31.208:8882/GetNews.aspx"
+
+
+#define GLScreenW [UIScreen mainScreen].bounds.size.width
+#define GLScreenH [UIScreen mainScreen].bounds.size.height
 #define GLRedColor [UIColor colorWithRed:(195.0/255.0) green:(18.0/255.0) blue:(18.0/255.0) alpha:1.0]
 #define GLLanuchImg @"LaunchImage"
+
+#define AccountFile [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent :@"account.data"];
+
 #endif

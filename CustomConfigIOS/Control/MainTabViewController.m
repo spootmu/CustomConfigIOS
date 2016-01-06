@@ -23,7 +23,7 @@
 
 -(void)setupUI
 {
-    [self.tab CustomCenterButton:@"cen" BackgroundImg:@"centerbtn" ButtonImg:nil];
+//    [self.tab CustomCenterButton:@"cen" BackgroundImg:@"centerbtn" ButtonImg:nil];
 
     for (TabData *data in [Helper GetTabConfig])
     {
