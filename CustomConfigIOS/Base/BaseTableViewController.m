@@ -58,7 +58,7 @@
     if(self.ps==0)
         self.ps=20;
     dic[@"ps"]=[NSString stringWithFormat:@"%zd",self.ps];
-    NSLog(@"%@",dic);
+//    NSLog(@"%@",dic);
     [manager GET:GLGetNewsURL parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *newdata=[News mj_objectArrayWithKeyValuesArray:responseObject];
         
@@ -66,7 +66,7 @@
         [self.tableView reloadData];
         [self.tableView.footer endRefreshing];
         self.ps=self.ps+20;
-        NSLog(@"rows:%zd",self.news.count);
+//        NSLog(@"rows:%zd",self.news.count);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
         [self.tableView.footer endRefreshing];
@@ -80,7 +80,7 @@
     dic[@"uid"]=[Helper ReadAccount].name;
     dic[@"mode"]=[NSString stringWithFormat:@"%zd",self.newsmode];
     dic[@"ps"]=[NSString stringWithFormat:@"%zd",0];
-    NSLog(@"%@",dic);
+//    NSLog(@"%@",dic);
     [manager GET:GLGetNewsURL parameters:dic success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSArray *newdata=[News mj_objectArrayWithKeyValuesArray:responseObject];
         NSMutableArray *temparr=[NSMutableArray array];
@@ -92,9 +92,10 @@
         [self.tableView reloadData];
         [self.tableView.header endRefreshing];
         //        self.ps=self.ps+20;
-        NSLog(@"rows:%zd",self.news.count);
+//        NSLog(@"rows:%zd",self.news.count);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"%@",error);
+        [self.tableView.header endRefreshing];
     }];
     
 }
