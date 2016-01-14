@@ -52,7 +52,6 @@
     
     if(self.news.files.count>0)
     {
-        NewsFile *nf    = self.news.files[0];
         CGFloat navH    = 50.0;
         CGFloat statusH = 14;
         UIView *vfoot=[[UIView alloc]init];
