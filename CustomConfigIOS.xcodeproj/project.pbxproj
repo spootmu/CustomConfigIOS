@@ -37,6 +37,7 @@
 		188B95AA1C3B9B2E00A61FA3 /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95A91C3B9B2E00A61FA3 /* News.m */; };
 		188B95AD1C3CF8C300A61FA3 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95AC1C3CF8C300A61FA3 /* BaseTableViewController.m */; };
 		188B95B01C3CFE6600A61FA3 /* NoticeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */; };
+		18C0219E1C47350900E7DB08 /* PreviewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18C0219D1C47350900E7DB08 /* PreviewViewController.m */; };
 		18E9212C309ED07BDE827F50 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DDEFBFAEE119B1D23D2E8809 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -100,6 +101,8 @@
 		188B95AC1C3CF8C300A61FA3 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
 		188B95AE1C3CFE6600A61FA3 /* NoticeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoticeViewController.h; sourceTree = "<group>"; };
 		188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoticeViewController.m; sourceTree = "<group>"; };
+		18C0219C1C47350900E7DB08 /* PreviewViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreviewViewController.h; sourceTree = "<group>"; };
+		18C0219D1C47350900E7DB08 /* PreviewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreviewViewController.m; sourceTree = "<group>"; };
 		6542DE4F6DB70E781B505016 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		DDEFBFAEE119B1D23D2E8809 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -235,6 +238,8 @@
 				188B95A61C3B68C900A61FA3 /* ViewNewsViewController.m */,
 				188B95AE1C3CFE6600A61FA3 /* NoticeViewController.h */,
 				188B95AF1C3CFE6600A61FA3 /* NoticeViewController.m */,
+				18C0219C1C47350900E7DB08 /* PreviewViewController.h */,
+				18C0219D1C47350900E7DB08 /* PreviewViewController.m */,
 			);
 			path = Control;
 			sourceTree = "<group>";
@@ -436,6 +441,7 @@
 				188B95AD1C3CF8C300A61FA3 /* BaseTableViewController.m in Sources */,
 				187669371C321AA500C02B9F /* LanuchViewController.m in Sources */,
 				1876692F1C312A3600C02B9F /* GuideViewController.m in Sources */,
+				18C0219E1C47350900E7DB08 /* PreviewViewController.m in Sources */,
 				188B95951C3A563300A61FA3 /* UserInfo.m in Sources */,
 				188B95A71C3B68C900A61FA3 /* ViewNewsViewController.m in Sources */,
 				187669211C31253700C02B9F /* FXForms.m in Sources */,

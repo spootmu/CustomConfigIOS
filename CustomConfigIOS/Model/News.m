@@ -9,5 +9,13 @@
 #import "News.h"
 
 @implementation News
++(NSDictionary *)objectClassInArray
+{
+    return @{@"files":[NewsFile class]};
+}
+@end
+@implementation NewsFile
+
+
 
 @end

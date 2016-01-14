@@ -27,6 +27,7 @@ PODS:
   - SDWebImage (3.7.3):
     - SDWebImage/Core (= 3.7.3)
   - SDWebImage/Core (3.7.3)
+  - TCBlobDownload (2.1.1)
 
 DEPENDENCIES:
   - AFNetworking
@@ -35,6 +36,7 @@ DEPENDENCIES:
   - MJExtension
   - MJRefresh
   - SDWebImage
+  - TCBlobDownload
 
 SPEC CHECKSUMS:
   AFNetworking: 05edc0ac4c4c8cf57bcf4b84be5b0744b6d8e71e
@@ -43,5 +45,6 @@ SPEC CHECKSUMS:
   MJExtension: 5ea3e326162ccc07c60afe8cc36c936bba20d0d5
   MJRefresh: cacdfe7844f1368c2e7f168e1cd345efd279fc24
   SDWebImage: 1d2b1a1efda1ade1b00b6f8498865f8ddedc8a84
+  TCBlobDownload: 8726f054cc00bb5f66a57bb0c99764842dfa5c9f
 
 COCOAPODS: 0.39.0

@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImagePlayerView.h"
+
 @class TopImgView;
 
 @protocol TopImgViewDelegate <NSObject>

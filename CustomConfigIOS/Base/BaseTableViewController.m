@@ -167,7 +167,7 @@
 {
     News *data=self.news[indexPath.row];
     ViewNewsViewController *viewnews=[[ViewNewsViewController alloc]init];
-    viewnews.nid=[data.nid integerValue];
+    viewnews.news=data;
     
     [self.navigationController pushViewController:viewnews animated:YES];
     
