@@ -23,7 +23,7 @@
     [super viewDidLoad];
     self.edgesForExtendedLayout=UIRectEdgeNone;
     self.automaticallyAdjustsScrollViewInsets = NO;
-    
+    self.title=@"正文";
     [self setupUI];
 }
 
