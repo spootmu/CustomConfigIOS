@@ -11,6 +11,7 @@
 #import "MainViewController.h"
 #import "LanuchViewController.h"
 #import "MainTabViewController.h"
+#import "SettingViewController.h"
 @interface AppDelegate ()
 @property (nonatomic, strong) UIStoryboard *storyboard;
 
@@ -44,6 +45,7 @@ static NSString * const sbName = @"Main";
     return _manager;
 }
 
+#pragma 定义各种控制器页面
 
 /**
  *  引导页视图
@@ -94,6 +96,15 @@ static NSString * const sbName = @"Main";
         _LoginView=[self.storyboard instantiateViewControllerWithIdentifier:@"login"];
     }
     return _LoginView;
+}
+
+-(SettingViewController *)SettingView
+{
+    if(!_SettingView)
+    {
+        _SettingView=[self.storyboard instantiateViewControllerWithIdentifier:@"setting"];
+    }
+    return _SettingView;
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {

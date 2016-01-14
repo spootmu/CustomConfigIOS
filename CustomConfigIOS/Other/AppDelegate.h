@@ -10,7 +10,7 @@
 #import <CoreData/CoreData.h>
 @class MainViewController;
 @class LanuchViewController;
-@class GuideViewController,MainTabViewController;
+@class GuideViewController,MainTabViewController,SettingViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 
@@ -25,6 +25,7 @@
 @property(nonatomic,strong) LanuchViewController *LanuchView;
 @property(nonatomic,strong) MainTabViewController *MainTab;
 @property(nonatomic,strong) UIViewController *LoginView;
+@property(nonatomic,strong) SettingViewController *SettingView;
 - (void)saveContext;
 - (NSURL *)applicationDocumentsDirectory;
 + (AppDelegate *)globalDelegate;

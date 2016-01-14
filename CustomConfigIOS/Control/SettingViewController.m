@@ -16,23 +16,50 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    self.view.backgroundColor=[UIColor purpleColor];
+    
+    [self setupUI];
+    
+}
+- (IBAction)btnClear:(id)sender {
+    
+    dispatch_async(
+                   dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0)
+                   , ^{
+                       NSString *cachPath = [NSSearchPathForDirectoriesInDomains(NSCachesDirectory,NSUserDomainMask, YES) objectAtIndex:0];
+                       NSString *tempPath = NSTemporaryDirectory();
+                       
+                       [self DelFileWithPath:cachPath];
+                       [self DelFileWithPath:tempPath];
+                       [self performSelectorOnMainThread:@selector(clearCacheSuccess) withObject:nil waitUntilDone:YES];});
+
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)DelFileWithPath:(NSString *)path
+{
+    NSArray *files = [[NSFileManager defaultManager] subpathsAtPath:path];
+    NSLog(@"files :%zd",[files count]);
+    for (NSString *p in files) {
+        NSError *error;
+        NSString *lpath = [path stringByAppendingPathComponent:p];
+        if ([[NSFileManager defaultManager] fileExistsAtPath:lpath]) {
+            [[NSFileManager defaultManager] removeItemAtPath:lpath error:&error];
+        }
+    }
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void)setupUI
+{
+    self.view.backgroundColor=[UIColor whiteColor];
+    UIButton *btnclear=[[UIButton alloc]init];
+    btnclear.frame=CGRectMake(GLScreenW*0.5-50, 64*2, 100, 40);
+    [btnclear setTitle:@"清除缓存" forState:UIControlStateNormal];
+    [btnclear setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [self.view addSubview:btnclear];
+    [btnclear addTarget:self action:@selector(btnClear:) forControlEvents:UIControlEventTouchUpInside];
 }
-*/
+-(void)clearCacheSuccess
+{
+    NSLog(@"清理成功");
+}
 
 @end
